@@ -6,6 +6,14 @@ import { Separator } from "@/components/ui/separator"; // นำเข้า Sep
 export const metadata: Metadata = {
   title: "NextApp - บทเรียน Next.js 16",
   description: "เว็บแอปพลิเคชันตัวอย่างที่สร้างด้วย Next.js, Tailwind CSS และ shadcn/ui",
+  images: [
+    {
+      url: "./favicon.ico",
+      width: 1200,
+      height: 630,
+      alt: "NextApp - บทเรียน Next.js 16",
+    },
+  ],
 };
 
 export default function RootLayout({
