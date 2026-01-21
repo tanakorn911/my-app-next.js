@@ -22,9 +22,9 @@ export default function AddToCartButton({
     // จำลองการส่งข้อมูลไป API
     console.log('เพิ่มสินค้าลงตะกร้า:', { productId, productName, quantity })
     setIsAdded(true)
-    
-    // แสดงสถานะ "เพิ่มแล้ว" 2 วินาที แล้วรีเซ็ต
-    setTimeout(() => setIsAdded(false), 2000)
+
+    // แสดงสถานะ "เพิ่มแล้ว" 1 วินาที แล้วรีเซ็ต
+    setTimeout(() => setIsAdded(false), 1000)
   }
 
   return (
