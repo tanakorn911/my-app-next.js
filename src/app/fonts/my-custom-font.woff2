@@ -1,0 +1,13 @@
+import localFont from 'next/font/local'
+
+const customFont = localFont({
+  src: [
+    {
+      path: './fonts/my-custom-font.woff2', // พาธไปยังไฟล์ฟอนต์ Regular
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-custom', // กำหนด CSS Variable เพื่อใช้ใน Tailwind
+  display: 'swap', // แสดง fallback font ระหว่างรอโหลด
+})

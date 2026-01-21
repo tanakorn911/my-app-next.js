@@ -29,6 +29,18 @@ const products = [
     price: 21900,
     description: 'แท็บเล็ตหน้าจอ Liquid Retina ขนาด 11 นิ้ว รองรับ Apple Pencil',
   },
+  {
+    id: 5,
+    name: 'โทรศัพท์มือถือ iPhone 15 Pro',
+    price: 41900,
+    description: 'หน้าจอ Super Retina XDR พร้อม ProMotion และบอดี้ไทเทเนียม',
+  },
+  {
+    id: 6,
+    name: 'หูฟัง Sony WH-1000XM3',
+    price: 7990,
+    description: 'หูฟังครอบหูไร้สายพร้อมระบบตัดเสียงรบกวนชั้นยอดและแบตเตอรี่ที่ยาวนาน',
+  },
 ];
 
 export default async function ProductDetailPage({
