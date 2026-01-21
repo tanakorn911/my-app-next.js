@@ -4,8 +4,6 @@ const nextConfig: NextConfig = {
   /* การตั้งค่าประสิทธิภาพอื่นๆ */
   reactCompiler: true,
   cacheComponents: true,
-
-  /* การตั้งค่า Image Optimization */
   images: {
     remotePatterns: [
       {

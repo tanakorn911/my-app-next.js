@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Prompt } from 'next/font/google' //
+import { Prompt } from 'next/font/google' //
 import Link from 'next/link'
 import './globals.css'
 import { Separator } from "@/components/ui/separator"
@@ -11,12 +11,6 @@ export const prompt = Prompt({
   subsets: ['thai', 'latin'], // รองรับทั้งภาษาไทยและอังกฤษ
   display: 'swap', // แสดง fallback font ระหว่างรอโหลด ช่วยให้ผู้ใช้เห็นข้อความทันที
   variable: '--font-prompt', // สร้าง CSS variable สำหรับใช้งาน
-})
-
-export const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
 })
 
 // *** ส่วนที่ 2: การจัดการ Metadata (SEO & Social Media) ***
@@ -61,8 +55,8 @@ export default function RootLayout({
 }) {
   return (
     // การนำฟอนต์ไปใช้ในระดับ html และ body
-    <html lang="th" className={`${prompt.variable} ${inter.variable}`}>
-      <body className={`${prompt.className} ${inter.className} antialiased min-h-screen bg-white`}>
+    <html lang="th" className={prompt.variable}>
+      <body className={`${prompt.className} antialiased min-h-screen bg-white`}>
         {/* Navigation Bar พร้อมดีไซน์ Sticky และ Blur */}
         <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
           <div className="container mx-auto flex h-16 items-center px-4">
